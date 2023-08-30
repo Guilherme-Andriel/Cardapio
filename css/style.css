@@ -146,7 +146,7 @@ main.container{
 .container-card{
   position: absolute;
   width: 100vw;
-  height: 100vh;
+  
 
   display: flex;
   justify-content: center;
@@ -808,41 +808,45 @@ button img.img{
 
   .height button.op{
     width: 45vw;
-    height: 35vh;
+    height: 25vh;
   }
 
   .height button.op img.img{
+    width: 200px;
+    height: 200px;
+  }
+
+  .height button.op .texto .produto{
+    font-size: 1.1rem;
+  }
+  .height button.op .texto .subtitulo{
+    font-size: 1rem;
+  }
+  .height button.op .texto .valor{
+    font-size: 1rem;
+  }
+  
+}
+
+@media only screen and (min-width: 1370px){
+
+  .height button.op{
+    width: 30vw;
+    height: 25vh;
+  }
+
+ .height button.op img.img{
     width: 250px;
     height: 250px;
   }
 
-  .height button.op .texto .produto{
-    font-size: 1.2rem;
-  }
-  .height button.op .texto .subtitulo{
-    font-size: 1.1rem;
-  }
-  .height button.op .texto .valor{
-    font-size: 1.1rem;
-  }
-
-
-  
 }
-
-@media(min-width: 939px) and (max-width: 1118px){
-  .height button.op img.img{
-    width: 230px;
-    height: 230px;
-  }
-}
-
 
 @media only screen and (min-width: 597.98px){
 
   
   #pedido{
-    top: 80px;
+    top: 150px;
   }
 
   .pedido button.voltar{
@@ -895,5 +899,30 @@ button img.img{
     margin: 5px;
     
   }
+
+
+}
+
+@media only screen and (min-width: 1230px){
+
+#pedido{
+  height: 100vh;
+  top: 0px;
+}
+
+.pedido{
+  height: 100vh;
+  border-radius: 0;
+}
+
+.container-card{
+  display: flex;
+  justify-content: flex-end;
+   
+}
+
+.voltar{
+  margin-bottom: 30px;
+}
 
 }

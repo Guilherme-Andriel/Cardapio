@@ -138,7 +138,7 @@ selecionados.forEach( (op) => {
     navList.removeAttribute('style')
 
   let card = document.createElement("div");
-  card.classList.add("pedido", "transicao", "opacity");
+  card.classList.add("pedido", "transicao");
 
   let voltar = document.createElement("button")
   card.appendChild(voltar)
