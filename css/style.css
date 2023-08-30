@@ -27,8 +27,8 @@ html{
   --corDoFundoPrincipal: #00b4d8;
   --corDeTexto3: #464646;
   --corDeSombra2: #464646;
-  --corDeTitulo: rgba(255, 255, 255, 0.18);
-  --corDeBorda: rgba(255, 255, 255, 0.18);
+  --corDeTitulo: #539dd6;
+  --corDeBorda: #539dd6;
   --corDoValor: #047334;
   --corDoFazerPedido: #047334;
   --corButtonAoTopo: #184e77;
@@ -54,7 +54,7 @@ html{
 
 
 body{
- background-image: url(../img/fundoBody.jpg);
+ background-image: url(../img/body.jpg);
   background-color: var(--corDoFundoPrincipal);
   font-family: "Inter", sans-serif;
 }
@@ -158,10 +158,6 @@ main.container{
 
 .titulop{
   background-color: var(--corDeTitulo);
-  backdrop-filter: blur(250px);
-  -webkit-backdrop-filter:blur(250px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.20);
  width: 100%;
  height: 50px;
  display: flex;
