@@ -131,8 +131,8 @@ selecionados.forEach( (op) => {
       pedidoAtual.remove()
     }
 
-    container.style.opacity = "0.4"
 
+ container.style.opacity = ".4"
     btnTop.style.visibility = "hidden";
     openMenu.removeAttribute('style')
     navList.removeAttribute('style')

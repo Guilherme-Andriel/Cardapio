@@ -24,11 +24,11 @@ html{
   --corDoButtonNav: #24252a;
   --corDoButtonVoltar: #24252a;
   --corDoFooter: #24252a;
-  --corDoFundoPrincipal: #dbf5fa;
+  --corDoFundoPrincipal: #00b4d8;
   --corDeTexto3: #464646;
   --corDeSombra2: #464646;
-  --corDeTitulo: #539dd6;
-  --corDeBorda: #539dd6;
+  --corDeTitulo: rgba(255, 255, 255, 0.18);
+  --corDeBorda: rgba(255, 255, 255, 0.18);
   --corDoValor: #047334;
   --corDoFazerPedido: #047334;
   --corButtonAoTopo: #184e77;
@@ -54,7 +54,7 @@ html{
 
 
 body{
- background-image: url(../img/fundoPrincipal.jpg);
+ background-image: url(../img/fundoBody.jpg);
   background-color: var(--corDoFundoPrincipal);
   font-family: "Inter", sans-serif;
 }
@@ -155,8 +155,13 @@ main.container{
 
 
 
+
 .titulop{
   background-color: var(--corDeTitulo);
+  backdrop-filter: blur(250px);
+  -webkit-backdrop-filter:blur(250px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.20);
  width: 100%;
  height: 50px;
  display: flex;
@@ -780,6 +785,7 @@ button img.img{
 
   .parallax-1, .parallax-2, .parallax-3, .parallax-4, .parallax-5, .parallax-6, .parallax-7{
     border: 8px solid var(--corDeBorda);
+
   }
 
   .parallax-1{
@@ -908,17 +914,19 @@ button img.img{
 #pedido{
   height: 100vh;
   top: 0px;
+  
 }
 
 .pedido{
   height: 100vh;
   border-radius: 0;
+
 }
 
 .container-card{
   display: flex;
   justify-content: flex-end;
-   
+     
 }
 
 .voltar{
