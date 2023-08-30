@@ -6,6 +6,7 @@
     if (pedidoAtual) {
       pedidoAtual.remove();
     }
+    container.style.opacity = "1"
     btnTop.style.visibility = "hidden";
     navList.style.display = 'flex';
     navList.style.right = (navList.offsetWidth * -1) + "px"
@@ -118,19 +119,26 @@
 
   let apresentacao = document.querySelector("#pedido")
 let selecionados = document.querySelectorAll(".op")
+let container = document.querySelector(".container")
+
 let pedidoAtual = null
 
 selecionados.forEach( (op) => {
   op.addEventListener("click", () =>{
+    
+
     if(pedidoAtual){
       pedidoAtual.remove()
     }
+
+    container.style.opacity = "0.4"
+
     btnTop.style.visibility = "hidden";
     openMenu.removeAttribute('style')
     navList.removeAttribute('style')
 
   let card = document.createElement("div");
-  card.classList.add("pedido", "transicao");
+  card.classList.add("pedido", "transicao", "opacity");
 
   let voltar = document.createElement("button")
   card.appendChild(voltar)
@@ -145,6 +153,7 @@ selecionados.forEach( (op) => {
   voltar.addEventListener("click", () =>{
     card.remove()
     btnTop.style.visibility = "visible";
+      container.style.opacity = "1"
   })
 
   let imagem = document.createElement("img")
@@ -177,6 +186,7 @@ selecionados.forEach( (op) => {
   pagamento.innerText = 'Aceitamos Pix e Cartão'
 
   pedidoAtual = card
+
   apresentacao.appendChild(card)
 
   setTimeout(() => {
