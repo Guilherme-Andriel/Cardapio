@@ -224,7 +224,7 @@ button{
 }
 
 #banner-bem-vindo h2{
-font-size: 1,6rem;
+
 font-weight: 600;
 margin: 0 0 8px 0;
 text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
@@ -233,7 +233,7 @@ text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 
 #banner-bem-vindo p{
   color: rgba(255, 255, 255, 0.9);
-  font-size: 0.95rem;
+  
   font-weight: 400;
   line-height: 1.4;
   max-width: 280px;
@@ -253,7 +253,7 @@ text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 
 
 #banner-bem-vindo h2{
-font-size: 0.9rem;
+font-size: 1rem;
  margin-top: 30px;
 margin-bottom: 10px;
 
@@ -261,7 +261,7 @@ margin-bottom: 10px;
 
 
 #banner-bem-vindo p{
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   margin-top: 10px;
 }
 
@@ -293,7 +293,7 @@ main.container{
 
 
 .titulop{
- 
+display: inline-block;
  width: 100%;
  height: 50px;
  display: flex;
@@ -301,8 +301,13 @@ main.container{
   position: relative;
   z-index: -1;
   top: 10px;
- margin: 1rem 0 1rem 0;
+ margin: 32px 16px 16px 20px;
+ padding-bottom: 8px;
+ border-bottom: 2px solid rgba(255, 255, 255, 0.2);
  border-radius: 10px;
+ text-transform: uppercase;
+ letter-spacing: 1px;
+ background-color: rgba(32, 140, 161, 0.15);
  
 }
 
@@ -876,7 +881,7 @@ button img.img{
   }
 
   .op{
-    width: 280px;
+    width: 340px;
   }  
 
 
@@ -975,7 +980,7 @@ button img.img{
   }
 
   .op{
-    width: 350px;
+    width: 390px;
   }  
 
   .titulo h2{
@@ -1051,7 +1056,7 @@ button img.img{
 
 
   .op{
-    width: 350px;
+    width: 390px;
   }
 
   button.op img.img{
