@@ -185,7 +185,7 @@ button{
   width: 100%;
   min-height: 280px;
   
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.65)), url('/img/Space.png');
+  background: linear-gradient(to bottom, rgba(133, 221, 238, 0.5), rgba(16, 57, 117, 0.9)), url('../img/space.png');
 
   background-size: cover;
   background-position: center;
