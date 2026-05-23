@@ -394,7 +394,6 @@ span{
 
 .subtitulo{
   color: var(--corDeTexto3);
-  font-size: 0.85rem;
   margin: 0 0 8px 0;
 }
 
@@ -1107,7 +1106,7 @@ button img.img{
     box-shadow: 1px 2px 3px #c0aeae;
   } 
 
-  #op1, #op2, #op3,#op4, #op5, #op6, #op7{
+  #op1, #op2, #op3,#op4{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1168,34 +1167,7 @@ button img.img{
     font-size: 2.5rem;
   }
 
-  .parallax-1, .parallax-2, .parallax-3, .parallax-4, .parallax-5, .parallax-6, .parallax-7{
-    border: 8px solid var(--corDeBorda);
-
-  }
-
-  .parallax-1{
-    background-image: url(../img/parallax-1.jpg);
-  }
-
-  .parallax-2{
-    background-image: url(../img/parallax-2.jpg);
-  }
-  
-  .parallax-3{
-    background-image: url(../img/parallax-3.jpg);
-  }
-  .parallax-4{
-    background-image: url(../img/parallax-4.jpg);
-  }
-  .parallax-5{
-    background-image: url(../img/parallax-5.jpg);
-  }
-  .parallax-6{
-    background-image: url(../img/parallax-6.jpg);
-  }
-  .parallax-7{
-    background-image: url(../img/parallax-7.jpg);
-  }
+ 
 
   .height button.op{
     width: 45vw;

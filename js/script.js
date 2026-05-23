@@ -34,8 +34,7 @@
   let doses = document.querySelector("#op2")
   let bebidas = document.querySelector("#op3")
   let petiscos = document.querySelector("#op4")
-  let almoco = document.querySelector("#op5")
-  let feijoada = document.querySelector("#op6")
+  
   let coqueteis = document.querySelector("#op7")
 
 
@@ -92,27 +91,7 @@
   
   })
 
-  almoco.addEventListener("click", () => {
-    location.href = '#almoco'
-    openMenu.removeAttribute('style')
-    navList.removeAttribute('style')
-
-  
-   
-    btnTop.style.visibility = "visible";
-  
-  })
-
-  feijoada.addEventListener("click", () => {
-    location.href = '#feijoada'
-    openMenu.removeAttribute('style')
-    navList.removeAttribute('style')
-
-  
-   
-    btnTop.style.visibility = "visible";
-    
-  })
+ 
 
 
   
