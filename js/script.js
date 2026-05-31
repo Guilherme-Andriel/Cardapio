@@ -137,6 +137,7 @@ selecionados.forEach( (op) => {
 
   let imagem = document.createElement("img")
   let tipoDeImg = op.getAttribute('data-img')
+  let nomeDoProduto = op.getAttribute('data-name')
 
   imagem.src= `img/${tipoDeImg}`
   card.appendChild(imagem)
@@ -158,8 +159,8 @@ selecionados.forEach( (op) => {
   fazerPedido.classList.add("fazerPedido")
   fazerPedido.addEventListener("click", ()=>{
 
-    const telefone = "5584992105759"; 
-    const mensagemPadrão = "Olá! Gostaria de saber mais informações sobre o projeto.";
+    const telefone = ""; 
+    const mensagemPadrão = `Olá! Gostaria de fazer um pedido. \n- Item:${nomeDoProduto}`;
     const mensagemCodificada = encodeURIComponent(mensagemPadrão);
 
     const linkWhatsApp = `https://wa.me/${telefone}?text=${mensagemCodificada}`;
