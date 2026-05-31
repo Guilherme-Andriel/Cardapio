@@ -314,7 +314,7 @@ display: inline-block;
 .titulop h2{
   color: #1a202c;
   margin: 24px 0 16px 16px;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 700;
   letter-spacing: -0.5px;
 }
@@ -340,7 +340,7 @@ main.container section{
   border-radius: 16px;
   background-color: var(--corDoButtonProduto);
   box-shadow: 0px 4px 6px -1px var(--corDeSombra2), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
-  margin: 12px 16px;
+  margin: 5px 16px;
   padding: 16px;
 }
 

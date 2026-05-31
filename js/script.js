@@ -156,9 +156,16 @@ selecionados.forEach( (op) => {
   card.appendChild(fazerPedido)
   fazerPedido.innerText = 'Fazer Pedido'
   fazerPedido.classList.add("fazerPedido")
-  // fazerPedido.addEventListener("click", ()=>{
-  //   location.href = "https://bit.ly/AmazoniaAzull"
-  // })
+  fazerPedido.addEventListener("click", ()=>{
+
+    const telefone = "5584992105759"; 
+    const mensagemPadrão = "Olá! Gostaria de saber mais informações sobre o projeto.";
+    const mensagemCodificada = encodeURIComponent(mensagemPadrão);
+
+    const linkWhatsApp = `https://wa.me/${telefone}?text=${mensagemCodificada}`;
+
+    window.open(linkWhatsApp, '_blank');
+  })
 
   let pagamento = document.createElement("p")
   card.appendChild(pagamento)
